@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3">
           <Gamepad2 className="w-8 h-8 text-primary" />
           <span className="font-heading text-xl font-bold tracking-wider text-foreground">
-            NEXUS<span className="neon-text">PLAY</span>
+            <em>NAAMS <span className="neon-text">play</span></em>
           </span>
         </Link>
         <div className="hidden md:flex items-center gap-8">

@@ -8,11 +8,11 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <Gamepad2 className="w-6 h-6 text-primary" />
             <span className="font-heading text-lg font-bold tracking-wider text-foreground">
-              NEXUS<span className="neon-text">PLAY</span>
+              <em>NAAMS <span className="neon-text">play</span></em>
             </span>
           </div>
           <p className="text-muted-foreground text-sm">
-            © 2026 NexusPlay. All rights reserved. One-time access, unlimited gaming.
+            © 2026 NAAMS play. All rights reserved. One-time access, unlimited gaming.
           </p>
         </div>
       </div>
