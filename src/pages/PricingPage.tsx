@@ -2,10 +2,17 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Zap, Check } from "lucide-react";
+import pricingBg from "@/assets/pricing-bg.jpg";
 
 const PricingPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <img
+        src={pricingBg}
+        alt="Modified Subaru WRX at car show"
+        className="fixed inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+      />
+      <div className="relative z-10">
       <Navbar />
       <div className="pt-28 pb-24">
         <div className="container mx-auto px-6">
@@ -56,6 +63,7 @@ const PricingPage = () => {
         </div>
       </div>
       <Footer />
+      </div>
     </div>
   );
 };
