@@ -80,7 +80,7 @@ const BrowserGamePlayPage = () => {
               allowFullScreen
               onLoad={() => setLoaded(true)}
               loading="lazy"
-              sandbox="allow-scripts allow-same-origin allow-popups"
+              sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
             />
           </div>
 
