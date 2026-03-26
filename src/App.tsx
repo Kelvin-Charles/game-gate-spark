@@ -8,6 +8,8 @@ import GamesPage from "./pages/GamesPage";
 import GamePlayPage from "./pages/GamePlayPage";
 import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
+import BrowserGamesPage from "./pages/BrowserGamesPage";
+import BrowserGamePlayPage from "./pages/BrowserGamePlayPage";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/games" element={<GamesPage />} />
           <Route path="/games/:slug" element={<GamePlayPage />} />
+          <Route path="/browser-games" element={<BrowserGamesPage />} />
+          <Route path="/browser-games/:id" element={<BrowserGamePlayPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/admin" element={<AdminLogin />} />
