@@ -18,6 +18,9 @@ const Navbar = () => {
           <Link to="/games" className="text-muted-foreground hover:text-primary transition-colors font-medium">
             Games
           </Link>
+          <Link to="/browser-games" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            Browser Games
+          </Link>
           <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors font-medium">
             Pricing
           </Link>
