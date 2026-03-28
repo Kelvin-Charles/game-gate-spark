@@ -12,7 +12,20 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+    {
+      name: "inject-og-image-url",
+      transformIndexHtml(html: string) {
+        const fromEnv = process.env.VITE_PUBLIC_SITE_URL?.trim().replace(/\/$/, "") ?? "";
+        const site =
+          fromEnv || (mode === "production" ? "https://naamsplay.games" : "");
+        const ogImage = site ? `${site}/og-image.png` : "/og-image.png";
+        return html.replaceAll("__OG_IMAGE_URL__", ogImage);
+      },
+    },
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
